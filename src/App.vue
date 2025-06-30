@@ -308,7 +308,7 @@ const getSiteList = async () => {
     }
     if (!data.success) return toast({ description: data.message, variant: 'destructive' });
     siteList.value = data.data;
-    siteValue.value = siteList.value[0]
+    siteValue.value = siteList.value[1]
     if (siteValue.value) getDatas()
   } catch (error) {
     console.log(error);
